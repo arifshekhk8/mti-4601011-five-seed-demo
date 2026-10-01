@@ -1,0 +1,367 @@
+{
+  "scope": "three annotation-and-speed-selected PIE test-video segments, not the full PIE test set",
+  "frames_processed": 333,
+  "pedestrian_frame_records": 826,
+  "unique_tracker_ids": 23,
+  "pearson_r_pedestrian_frame": -0.9701844124709397,
+  "pearson_pvalue_naive": 0.0,
+  "speed_groups": {
+    "zero_kmh": {
+      "pedestrian_frame_records": 300,
+      "flagged_records": 300,
+      "flagged_percent": 100.0,
+      "unique_tracker_ids": 7,
+      "tracker_ids_flagged_at_least_once": 7
+    },
+    "above_20_kmh": {
+      "pedestrian_frame_records": 477,
+      "flagged_records": 0,
+      "flagged_percent": 0.0,
+      "unique_tracker_ids": 16,
+      "tracker_ids_flagged_at_least_once": 0
+    }
+  },
+  "scene_counts": [
+    {
+      "scene": "A",
+      "video": "video_0012",
+      "start_frame": 5650,
+      "end_frame": 5760,
+      "frames_processed": 111,
+      "prediction_rows": 179,
+      "unique_tracker_ids": 3,
+      "flagged_rows": 179,
+      "panel_frame": 5720,
+      "panel_prediction_rows": 2,
+      "panel_flagged_rows": 2
+    },
+    {
+      "scene": "B",
+      "video": "video_0012",
+      "start_frame": 3580,
+      "end_frame": 3690,
+      "frames_processed": 111,
+      "prediction_rows": 170,
+      "unique_tracker_ids": 4,
+      "flagged_rows": 162,
+      "panel_frame": 3650,
+      "panel_prediction_rows": 2,
+      "panel_flagged_rows": 2
+    },
+    {
+      "scene": "C",
+      "video": "video_0016",
+      "start_frame": 1225,
+      "end_frame": 1335,
+      "frames_processed": 111,
+      "prediction_rows": 477,
+      "unique_tracker_ids": 16,
+      "flagged_rows": 0,
+      "panel_frame": 1295,
+      "panel_prediction_rows": 7,
+      "panel_flagged_rows": 0
+    }
+  ],
+  "panels": [
+    {
+      "scene": "A",
+      "video": "video_0012",
+      "frame": 5720,
+      "ego_speed_kmh": 0.0,
+      "target_ped_id": "3_12_741",
+      "ground_truth_code": 1,
+      "crossing_point": 5766,
+      "first_crossing_state_frame": 5766,
+      "frames_to_first_crossing_state": 46,
+      "target_gt_box": [
+        224.09,
+        622.38,
+        301.94,
+        894.75
+      ],
+      "all_annotated_boxes": [
+        {
+          "ped_id": "3_12_740",
+          "box": [
+            400.7,
+            650.28,
+            503.74,
+            926.42
+          ],
+          "crossing_code": 1,
+          "crossing_point": 5416
+        },
+        {
+          "ped_id": "3_12_741",
+          "box": [
+            224.09,
+            622.38,
+            301.94,
+            894.75
+          ],
+          "crossing_code": 1,
+          "crossing_point": 5766
+        }
+      ],
+      "matched_track_id": 10,
+      "match_iou": 0.9132920338403983,
+      "prob_cross": 0.9383231401443481,
+      "flagged": 1,
+      "window_start": 5705,
+      "detected_box": [
+        220.49267578125,
+        622.876953125,
+        302.4934387207031,
+        884.3632202148438
+      ],
+      "panel_prediction_count": 2,
+      "panel_flagged_count": 2,
+      "panel_boxes": [
+        {
+          "track_id": 1,
+          "box": [
+            401.5490417480469,
+            650.1095581054688,
+            490.2437438964844,
+            924.9066772460938
+          ],
+          "prob_cross": 0.789494514465332,
+          "flagged": 1
+        },
+        {
+          "track_id": 10,
+          "box": [
+            220.49267578125,
+            622.876953125,
+            302.4934387207031,
+            884.3632202148438
+          ],
+          "prob_cross": 0.9383231401443481,
+          "flagged": 1
+        }
+      ]
+    },
+    {
+      "scene": "B",
+      "video": "video_0012",
+      "frame": 3650,
+      "ego_speed_kmh": 0.0,
+      "target_ped_id": "3_12_726",
+      "ground_truth_code": -1,
+      "crossing_point": 3718,
+      "first_crossing_state_frame": null,
+      "frames_to_first_crossing_state": null,
+      "target_gt_box": [
+        1383.35,
+        693.68,
+        1467.05,
+        889.75
+      ],
+      "all_annotated_boxes": [
+        {
+          "ped_id": "3_12_726",
+          "box": [
+            1383.35,
+            693.68,
+            1467.05,
+            889.75
+          ],
+          "crossing_code": -1,
+          "crossing_point": 3718
+        },
+        {
+          "ped_id": "3_12_727",
+          "box": [
+            1460.35,
+            673.62,
+            1507.66,
+            892.48
+          ],
+          "crossing_code": -1,
+          "crossing_point": 3709
+        },
+        {
+          "ped_id": "3_12_737",
+          "box": [
+            1129.24,
+            745.17,
+            1146.55,
+            791.19
+          ],
+          "crossing_code": 0,
+          "crossing_point": 3858
+        }
+      ],
+      "matched_track_id": 1,
+      "match_iou": 0.884472547783792,
+      "prob_cross": 0.8429588079452515,
+      "flagged": 1,
+      "window_start": 3635,
+      "detected_box": [
+        1380.6826171875,
+        694.5856323242188,
+        1460.587890625,
+        888.434326171875
+      ],
+      "panel_prediction_count": 2,
+      "panel_flagged_count": 2,
+      "panel_boxes": [
+        {
+          "track_id": 1,
+          "box": [
+            1380.6826171875,
+            694.5856323242188,
+            1460.587890625,
+            888.434326171875
+          ],
+          "prob_cross": 0.8429588079452515,
+          "flagged": 1
+        },
+        {
+          "track_id": 2,
+          "box": [
+            1461.63916015625,
+            676.5654907226562,
+            1506.3253173828125,
+            887.7945556640625
+          ],
+          "prob_cross": 0.8562759160995483,
+          "flagged": 1
+        }
+      ]
+    },
+    {
+      "scene": "C",
+      "video": "video_0016",
+      "frame": 1295,
+      "ego_speed_kmh": 28.0025856,
+      "target_ped_id": "3_16_900",
+      "ground_truth_code": -1,
+      "crossing_point": 1341,
+      "first_crossing_state_frame": null,
+      "frames_to_first_crossing_state": null,
+      "target_gt_box": [
+        1251.3,
+        723.3,
+        1309.77,
+        860.51
+      ],
+      "all_annotated_boxes": [
+        {
+          "ped_id": "3_16_899",
+          "box": [
+            1301.99,
+            733.49,
+            1335.53,
+            846.54
+          ],
+          "crossing_code": 0,
+          "crossing_point": 1338
+        },
+        {
+          "ped_id": "3_16_900",
+          "box": [
+            1251.3,
+            723.3,
+            1309.77,
+            860.51
+          ],
+          "crossing_code": -1,
+          "crossing_point": 1341
+        }
+      ],
+      "matched_track_id": 41,
+      "match_iou": 0.761141446669861,
+      "prob_cross": 0.007821699604392052,
+      "flagged": 0,
+      "window_start": 1280,
+      "detected_box": [
+        1261.240478515625,
+        731.6715087890625,
+        1311.0147705078125,
+        860.0052490234375
+      ],
+      "panel_prediction_count": 7,
+      "panel_flagged_count": 0,
+      "panel_boxes": [
+        {
+          "track_id": 11,
+          "box": [
+            1753.14892578125,
+            695.0787353515625,
+            1798.59423828125,
+            848.1163940429688
+          ],
+          "prob_cross": 0.006291543133556843,
+          "flagged": 0
+        },
+        {
+          "track_id": 13,
+          "box": [
+            1491.808349609375,
+            728.6378784179688,
+            1532.7222900390625,
+            831.0493774414062
+          ],
+          "prob_cross": 0.009459116496145725,
+          "flagged": 0
+        },
+        {
+          "track_id": 23,
+          "box": [
+            83.36319732666016,
+            657.912109375,
+            113.9383544921875,
+            747.9564819335938
+          ],
+          "prob_cross": 0.3798885941505432,
+          "flagged": 0
+        },
+        {
+          "track_id": 33,
+          "box": [
+            1301.96044921875,
+            737.9976806640625,
+            1334.86328125,
+            846.087890625
+          ],
+          "prob_cross": 0.009244672022759914,
+          "flagged": 0
+        },
+        {
+          "track_id": 45,
+          "box": [
+            457.98736572265625,
+            710.4143676757812,
+            491.54998779296875,
+            812.9667358398438
+          ],
+          "prob_cross": 0.007174046244472265,
+          "flagged": 0
+        },
+        {
+          "track_id": 88,
+          "box": [
+            187.03256225585938,
+            667.1754760742188,
+            222.34609985351562,
+            767.4185180664062
+          ],
+          "prob_cross": 0.33629488945007324,
+          "flagged": 0
+        },
+        {
+          "track_id": 41,
+          "box": [
+            1261.240478515625,
+            731.6715087890625,
+            1311.0147705078125,
+            860.0052490234375
+          ],
+          "prob_cross": 0.007821699604392052,
+          "flagged": 0
+        }
+      ]
+    }
+  ]
+}

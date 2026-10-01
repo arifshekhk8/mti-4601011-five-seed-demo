@@ -1,0 +1,24 @@
+{
+  "source_repository": "https://github.com/arifshekhk8/pedestrian-intention-temporal-validity",
+  "source_commit": "c3c535c2f80eac1957b0572d0c1a2a164c2c7d3c",
+  "secondary_repository": "https://github.com/arifshekhk8/pedestrian-crossing-intention-pie",
+  "secondary_commit": "7838cf37da8d359b2249e8320474aa19730202d5",
+  "record": "experiments/02_model_comparison/matched_comparison_results.json:families.BiLSTM",
+  "run_family": "runs/matched/BiLSTM",
+  "seeds": [42, 0, 1, 2, 3],
+  "model": {"family": "BiLSTM", "input_dim": 5, "projection_dim": 64, "hidden_dim": 256, "num_layers": 2, "dropout": 0.2, "lr": 0.0001, "positive_weight": 1.682, "selection": "best validation AUC"},
+  "features": ["x1", "y1", "x2", "y2", "vehicle_speed"],
+  "box_units": "pixels in original 1920x1080 PIE frame",
+  "ego_speed_units": "km/h, OBD_speed",
+  "input_frames": 16,
+  "normalization": "per-feature train-set z score from each seed's norm_mean.npy and norm_std.npy",
+  "threshold": 0.4579877257347107,
+  "threshold_selection": "argmax validation F1 on the mean of five validation probability vectors, held fixed for test and video",
+  "splits": {"train": ["set01", "set02", "set04"], "validation": ["set05", "set06"], "test": ["set03"]},
+  "detector": {"weights": "yolo26m.pt", "class": 0, "confidence": 0.3, "image_size": 640, "tracker": "bytetrack.yaml"},
+  "scenes": [
+    {"scene": "A", "video": "video_0012", "start_frame": 5650, "end_frame": 5760, "panel_frame": 5720, "target_ped_id": "3_12_741", "selection": "annotated future crossing, 46 frames before crossing onset, OBD speed 0 km/h"},
+    {"scene": "B", "video": "video_0012", "start_frame": 3580, "end_frame": 3690, "panel_frame": 3650, "target_ped_id": "3_12_726", "selection": "annotated non-crossing pedestrian at OBD speed 0 km/h"},
+    {"scene": "C", "video": "video_0016", "start_frame": 1225, "end_frame": 1335, "panel_frame": 1295, "target_ped_id": "3_16_900", "selection": "annotated non-crossing pedestrian at OBD speed above 20 km/h"}
+  ]
+}

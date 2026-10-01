@@ -1,0 +1,41 @@
+{
+  "A": {
+    "scene": "A",
+    "video": "video_0012",
+    "start_frame": 5650,
+    "end_frame": 5760,
+    "panel_frame": 5720,
+    "frames_processed": 111,
+    "prediction_rows": 179,
+    "unique_tracker_ids": 3,
+    "csv": "scene_A_predictions.csv",
+    "video_sha256": "1431203af5448fbb667cff968cf6b38a58c337c68d6989cec8287ed2e832e7b8",
+    "detector_device": "mps"
+  },
+  "B": {
+    "scene": "B",
+    "video": "video_0012",
+    "start_frame": 3580,
+    "end_frame": 3690,
+    "panel_frame": 3650,
+    "frames_processed": 111,
+    "prediction_rows": 170,
+    "unique_tracker_ids": 4,
+    "csv": "scene_B_predictions.csv",
+    "video_sha256": "1431203af5448fbb667cff968cf6b38a58c337c68d6989cec8287ed2e832e7b8",
+    "detector_device": "mps"
+  },
+  "C": {
+    "scene": "C",
+    "video": "video_0016",
+    "start_frame": 1225,
+    "end_frame": 1335,
+    "panel_frame": 1295,
+    "frames_processed": 111,
+    "prediction_rows": 477,
+    "unique_tracker_ids": 16,
+    "csv": "scene_C_predictions.csv",
+    "video_sha256": "2a8b9976acb8611d8e4ce44df08ecd4a2cc26b522835707e305755de617c2815",
+    "detector_device": "mps"
+  }
+}

@@ -1,0 +1,4 @@
+scene,video,start_frame,end_frame,frames_processed,prediction_rows,unique_tracker_ids,flagged_rows,panel_frame,panel_prediction_rows,panel_flagged_rows
+A,video_0012,5650,5760,111,179,3,179,5720,2,2
+B,video_0012,3580,3690,111,170,4,162,3650,2,2
+C,video_0016,1225,1335,111,477,16,0,1295,7,0

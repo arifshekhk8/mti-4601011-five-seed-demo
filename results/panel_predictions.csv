@@ -1,0 +1,4 @@
+scene,video,frame,ego_speed_kmh,target_ped_id,ground_truth_code,crossing_point,first_crossing_state_frame,frames_to_first_crossing_state,matched_track_id,match_iou,window_start,prob_cross,flagged,panel_prediction_count,panel_flagged_count
+A,video_0012,5720,0.0,3_12_741,1,5766,5766,46,10,0.9132920338403983,5705,0.9383231401443481,1,2,2
+B,video_0012,3650,0.0,3_12_726,-1,3718,,,1,0.884472547783792,3635,0.8429588079452515,1,2,2
+C,video_0016,1295,28.0025856,3_16_900,-1,1341,,,41,0.761141446669861,1280,0.007821699604392052,0,7,0
