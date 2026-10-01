@@ -1,6 +1,6 @@
 # Source and manuscript provenance audit
 
-The latest located local submission artifact for `mti-4601011` was the PDF titled *Temporal Validity and Sampling Bias in Pedestrian Crossing Prediction: A Multi-Dataset Audit and Controlled Evaluation*, modified on 2026-09-07 at 22:54 local time. The corresponding latest located local TeX source was `final (2).tex`, modified on 2026-09-07 at 21:44. Both were read and copied only into the ignored private workspace; the source manuscript was left unchanged.
+The latest located local submission PDF for `mti-4601011` was titled *Temporal Validity and Sampling Bias in Pedestrian Crossing Prediction: A Multi-Dataset Audit and Controlled Evaluation* and modified on 2026-09-07 at 22:54 local time. A newer manuscript ZIP supplied on 2026-10-02 contains `final.tex` and the wide `figures/fig6_demo.png`; its source files are dated 2026-10-01. The ZIP and earlier PDF/TeX were read via copies in the ignored private workspace; the original manuscript files were left unchanged.
 
 The submission's qualitative demonstration paragraph reported `r = -0.892`, 96.2% stationary flagging, 1.00% flagging above 20 km/h, and three scene descriptions based on an earlier demo. Those values were **not** carried into this repository's results. The new Results proposal identifies its narrower three-segment scope and new denominators.
 

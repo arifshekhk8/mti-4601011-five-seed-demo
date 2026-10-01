@@ -7,11 +7,13 @@ The figure and statistics are an **offline, deliberately selected illustration**
 ## Deliverables
 
 - [`figures/issue5_three_panel.pdf`](figures/issue5_three_panel.pdf) and [`figures/issue5_three_panel.png`](figures/issue5_three_panel.png): face-blurred journal figure.
+- [`figures/fig6_demo.png`](figures/fig6_demo.png) and [`figures/fig6_demo.pdf`](figures/fig6_demo.pdf): wide, three-panel figure matching the newly supplied manuscript ZIP's demo layout. [`fig6_demo_dropin.zip`](figures/fig6_demo_dropin.zip) contains the PNG at the manuscript's expected path.
 - [`results/predictions_all.csv`](results/predictions_all.csv): 826 new pedestrian-frame predictions, with all five seed probabilities, ensemble probability, speed, track ID, and 16-frame window bounds. Separate scene CSVs are also provided.
 - [`results/analysis.json`](results/analysis.json), [`results/scene_counts.csv`](results/scene_counts.csv), and [`results/panel_predictions.csv`](results/panel_predictions.csv): recalculated statistics and ground-truth timing.
 - [`reports/verification.md`](reports/verification.md), [`results/verification.json`](results/verification.json), and [`results/verification_metrics.csv`](results/verification_metrics.csv): quantitative parity, checkpoint identities and SHA-256 hashes.
 - [`reports/demo_analysis.md`](reports/demo_analysis.md): selection rules, denominators, interpretation, and limitations.
 - [`reports/source_audit.md`](reports/source_audit.md): manuscript and repository provenance, including the older F1-arm distinction.
+- [`reports/figure_replacement.md`](reports/figure_replacement.md): inspection of the newly supplied ZIP, figure mapping, and text consistency note.
 - [`reports/issue5_replacements.md`](reports/issue5_replacements.md): concise manuscript Methods, Results, Discussion, and caption proposals.
 - [`run_manifest.json`](run_manifest.json): input/output hashes and versioned run configuration.
 
@@ -41,6 +43,7 @@ The program checks that every source exists and every destination is empty **bef
 .venv/bin/python scripts/demo.py --scene all --device mps
 .venv/bin/python scripts/analyze.py
 .venv/bin/python scripts/figure.py
+.venv/bin/python scripts/figure_manuscript.py
 .venv/bin/python scripts/manifest.py
 ```
 

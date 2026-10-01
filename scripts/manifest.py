@@ -36,15 +36,18 @@ def main():
     assert set(run) == expected
     outputs = [".gitignore", "README.md", "config.json", "requirements.txt",
                "scripts/common.py", "scripts/prepare_inputs.py", "scripts/verify.py",
-               "scripts/demo.py", "scripts/analyze.py", "scripts/figure.py", "scripts/manifest.py",
+               "scripts/demo.py", "scripts/analyze.py", "scripts/figure.py",
+               "scripts/figure_manuscript.py", "scripts/manifest.py",
                "figures/issue5_three_panel.pdf",
-               "figures/issue5_three_panel.png", "results/verification.json",
+               "figures/issue5_three_panel.png", "figures/fig6_demo.png",
+               "figures/fig6_demo.pdf", "figures/fig6_demo_dropin.zip",
+               "results/verification.json",
                "results/verification_metrics.csv", "results/demo_run.json", "results/predictions_all.csv",
                "results/analysis.json", "results/scene_counts.csv", "results/panel_predictions.csv",
                "results/scene_A_predictions.csv", "results/scene_B_predictions.csv",
                "results/scene_C_predictions.csv", "reports/verification.md",
                "reports/demo_analysis.md", "reports/issue5_replacements.md",
-               "reports/source_audit.md"]
+               "reports/source_audit.md", "reports/figure_replacement.md"]
     manifest = {
         "purpose": "MTI 4601011 Issue 5 offline video demonstration",
         "source_repository_commit": CONFIG["source_commit"],
